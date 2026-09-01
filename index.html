@@ -1,593 +1,592 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Política de Privacidad · LuckReveal</title>
-    <style>
-        /* Reset y base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos y Condiciones · LuckReveal</title>
+    <style>
+        /* Reset y base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        body {
-            background: #f5f5f7;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: #1d1d1f;
-            line-height: 1.6;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
+        body {
+            background: #f5f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-        .container {
-            max-width: 820px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 28px;
-            padding: 50px 60px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(0, 0, 0, 0.02);
-            transition: all 0.2s ease;
-        }
+        .container {
+            max-width: 820px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(0, 0, 0, 0.02);
+            transition: all 0.2s ease;
+        }
 
-        /* Encabezado */
-        .header {
-            border-bottom: 1px solid #e5e5ea;
-            padding-bottom: 28px;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+        /* Encabezado */
+        .header {
+            border-bottom: 1px solid #e5e5ea;
+            padding-bottom: 28px;
+            margin-bottom: 30px;
+        }
 
-        .header-logo {
-            width: 70px;
-            height: 70px;
-            object-fit: contain;
-            border-radius: 14px;
-            background: #000;
-            padding: 4px;
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+        .header h1 {
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #1d1d1f;
+            margin-bottom: 6px;
+        }
 
-        .header-content {
-            flex-grow: 1;
-        }
+        .header .sub {
+            font-size: 16px;
+            color: #86868b;
+            font-weight: 400;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            margin-top: 4px;
+        }
 
-        .header h1 {
-            font-size: 34px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #1d1d1f;
-            margin-bottom: 6px;
-        }
+        .header .sub span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-        .header .sub {
-            font-size: 16px;
-            color: #86868b;
-            font-weight: 400;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 20px;
-            margin-top: 4px;
-        }
+        .header .sub .dot {
+            color: #c6c6c8;
+        }
 
-        .header .sub span {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
+        /* Índice */
+        .indice {
+            background: #f8f8fa;
+            border-radius: 16px;
+            padding: 22px 28px;
+            margin-bottom: 36px;
+        }
 
-        .header .sub .dot {
-            color: #c6c6c8;
-        }
+        .indice h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
 
-        /* Índice */
-        .indice {
-            background: #f8f8fa;
-            border-radius: 16px;
-            padding: 22px 28px;
-            margin-bottom: 36px;
-        }
+        .indice ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 4px 16px;
+            padding: 0;
+        }
 
-        .indice h2 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 12px;
-            letter-spacing: -0.3px;
-        }
+        .indice li {
+            font-size: 14px;
+            line-height: 1.8;
+        }
 
-        .indice ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 4px 16px;
-            padding: 0;
-        }
+        .indice a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
 
-        .indice li {
-            font-size: 14px;
-            line-height: 1.8;
-        }
+        .indice a:hover {
+            border-bottom-color: #0066cc;
+        }
 
-        .indice a {
-            color: #0066cc;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.15s;
-        }
+        /* Secciones */
+        .seccion {
+            margin-bottom: 36px;
+            scroll-margin-top: 20px;
+        }
 
-        .indice a:hover {
-            border-bottom-color: #0066cc;
-        }
+        .seccion h2 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            color: #1d1d1f;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-        /* Secciones */
-        .seccion {
-            margin-bottom: 36px;
-            scroll-margin-top: 20px;
-        }
+        .seccion h2 .num {
+            color: #86868b;
+            font-weight: 400;
+            font-size: 18px;
+            margin-right: 4px;
+        }
 
-        .seccion h2 {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: -0.3px;
-            color: #1d1d1f;
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        .seccion p {
+            font-size: 16px;
+            color: #3a3a3c;
+            margin-bottom: 14px;
+        }
 
-        .seccion h2 .num {
-            color: #86868b;
-            font-weight: 400;
-            font-size: 18px;
-            margin-right: 4px;
-        }
+        .seccion ul, .seccion ol {
+            padding-left: 24px;
+            margin-bottom: 14px;
+        }
 
-        .seccion h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
+        .seccion li {
+            font-size: 16px;
+            color: #3a3a3c;
+            margin-bottom: 6px;
+        }
 
-        .seccion p {
-            font-size: 16px;
-            color: #3a3a3c;
-            margin-bottom: 14px;
-        }
+        .seccion li strong {
+            color: #1d1d1f;
+        }
 
-        .seccion ul, .seccion ol {
-            padding-left: 24px;
-            margin-bottom: 14px;
-        }
+        .seccion .highlight {
+            background: #f0f8ff;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid #0066cc;
+            margin: 16px 0;
+        }
 
-        .seccion li {
-            font-size: 16px;
-            color: #3a3a3c;
-            margin-bottom: 6px;
-        }
+        .seccion .highlight p {
+            margin-bottom: 0;
+        }
 
-        .seccion li strong {
-            color: #1d1d1f;
-        }
+        .seccion .legal-note {
+            background: #fef6e0;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border-left: 4px solid #ffcc00;
+            margin: 16px 0;
+            font-size: 15px;
+        }
 
-        .seccion .highlight {
-            background: #f0f8ff;
-            padding: 14px 20px;
-            border-radius: 12px;
-            border-left: 4px solid #0066cc;
-            margin: 16px 0;
-        }
+        .seccion .legal-note p {
+            margin-bottom: 0;
+        }
 
-        .seccion .highlight p {
-            margin-bottom: 0;
-        }
+        /* Tabla de datos del titular */
+        .tabla-titular {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 8px;
+            font-size: 15px;
+        }
 
-        .seccion .legal-note {
-            background: #fef6e0;
-            padding: 14px 20px;
-            border-radius: 12px;
-            border-left: 4px solid #ffcc00;
-            margin: 16px 0;
-            font-size: 15px;
-        }
+        .tabla-titular td {
+            padding: 8px 12px 8px 0;
+            border-bottom: 1px solid #e5e5ea;
+        }
 
-        .seccion .legal-note p {
-            margin-bottom: 0;
-        }
+        .tabla-titular td:first-child {
+            font-weight: 600;
+            color: #1d1d1f;
+            width: 130px;
+        }
 
-        /* Tabla de datos del titular */
-        .tabla-titular {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 14px 0 8px;
-            font-size: 15px;
-        }
+        .tabla-titular tr:last-child td {
+            border-bottom: none;
+        }
 
-        .tabla-titular td {
-            padding: 8px 12px 8px 0;
-            border-bottom: 1px solid #e5e5ea;
-        }
+        /* Pie */
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #86868b;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
 
-        .tabla-titular td:first-child {
-            font-weight: 600;
-            color: #1d1d1f;
-            width: 130px;
-        }
+        .footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-        .tabla-titular tr:last-child td {
-            border-bottom: none;
-        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-        /* Pie */
-        .footer {
-            margin-top: 40px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e5ea;
-            font-size: 14px;
-            color: #86868b;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container {
+                padding: 30px 24px;
+                border-radius: 20px;
+            }
 
-        .footer a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+            .header h1 {
+                font-size: 28px;
+            }
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+            .indice ul {
+                grid-template-columns: 1fr;
+            }
 
-        /* Responsive */
-        @media (max-width: 700px) {
-            .container {
-                padding: 30px 24px;
-                border-radius: 20px;
-            }
+            .seccion h2 {
+                font-size: 21px;
+            }
 
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 14px;
-            }
+            .tabla-titular td:first-child {
+                width: 100px;
+            }
+        }
 
-            .header h1 {
-                font-size: 28px;
-            }
+        @media (max-width: 480px) {
+            body {
+                padding: 16px 10px;
+            }
 
-            .indice ul {
-                grid-template-columns: 1fr;
-            }
+            .container {
+                padding: 22px 16px;
+                border-radius: 16px;
+            }
 
-            .seccion h2 {
-                font-size: 21px;
-            }
+            .header h1 {
+                font-size: 24px;
+            }
 
-            .tabla-titular td:first-child {
-                width: 100px;
-            }
-        }
+            .header .sub {
+                font-size: 14px;
+                flex-direction: column;
+                gap: 4px;
+            }
 
-        @media (max-width: 480px) {
-            body {
-                padding: 16px 10px;
-            }
+            .indice {
+                padding: 16px 18px;
+            }
 
-            .container {
-                padding: 22px 16px;
-                border-radius: 16px;
-            }
+            .seccion h2 {
+                font-size: 19px;
+            }
 
-            .header h1 {
-                font-size: 24px;
-            }
+            .tabla-titular td {
+                padding: 6px 8px 6px 0;
+                font-size: 14px;
+            }
 
-            .header .sub {
-                font-size: 14px;
-                flex-direction: column;
-                gap: 4px;
-            }
+            .tabla-titular td:first-child {
+                width: 80px;
+            }
+        }
 
-            .indice {
-                padding: 16px 18px;
-            }
+        /* Scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
 
-            .seccion h2 {
-                font-size: 19px;
-            }
-
-            .tabla-titular td {
-                padding: 6px 8px 6px 0;
-                font-size: 14px;
-            }
-
-            .tabla-titular td:first-child {
-                width: 80px;
-            }
-        }
-
-        /* Scroll suave */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        a:focus-visible {
-            outline: 2px solid #0066cc;
-            outline-offset: 2px;
-        }
-    </style>
+        /* Mejora la accesibilidad */
+        a:focus-visible {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container">
 
-        <!-- CABECERA -->
-        <div class="header">
-            <img src="logo.png" alt="LuckReveal Logo" class="header-logo" />
-            <div class="header-content">
-                <h1>🔒 Política de Privacidad</h1>
-                <div class="sub">
-                    <span>Última actualización: <strong>05 de agosto de 2026</strong></span>
-                    <span class="dot">·</span>
-                    <span>Luck Reveal</span>
-                    <span class="dot">·</span>
-                    <span>v1.0.0</span>
-                </div>
-            </div>
-        </div>
+        <!-- CABECERA -->
+        <div class="header">
+            <h1>📜 Términos y Condiciones</h1>
+            <div class="sub">
+                <span>Última actualización: <strong>01 de septiembre de 2026</strong></span>
+                <span class="dot">·</span>
+                <span>LuckReveal</span>
+                <span class="dot">·</span>
+                <span>v1.0.0</span>
+            </div>
+        </div>
 
-        <!-- ÍNDICE -->
-        <div class="indice">
-            <h2>Índice</h2>
-            <ul>
-                <li><a href="#sec1">1. Información que recopilamos</a></li>
-                <li><a href="#sec2">2. Procesamiento de información</a></li>
-                <li><a href="#sec3">3. Bases legales</a></li>
-                <li><a href="#sec4">4. Compartir información</a></li>
-                <li><a href="#sec5">5. Sitios web de terceros</a></li>
-                <li><a href="#sec6">6. Cookies y tecnologías</a></li>
-                <li><a href="#sec7">7. Inicios de sesión sociales</a></li>
-                <li><a href="#sec8">8. Transferencias internacionales</a></li>
-                <li><a href="#sec9">9. Retención de datos</a></li>
-                <li><a href="#sec10">10. Seguridad de la información</a></li>
-                <li><a href="#sec11">11. Menores de edad</a></li>
-                <li><a href="#sec12">12. Tus derechos de privacidad</a></li>
-                <li><a href="#sec13">13. Controles Do-Not-Track</a></li>
-                <li><a href="#sec14">14. Residentes de EE. UU.</a></li>
-                <li><a href="#sec15">15. Actualizaciones de aviso</a></li>
-                <li><a href="#sec16">16. Cómo contactarnos</a></li>
-                <li><a href="#sec17">17. Revisar, actualizar o eliminar datos</a></li>
-            </ul>
-        </div>
+        <!-- ÍNDICE -->
+        <div class="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#sec1">1. Nuestros Servicios</a></li>
+                <li><a href="#sec2">2. Propiedad Intelectual</a></li>
+                <li><a href="#sec3">3. Representaciones del Usuario</a></li>
+                <li><a href="#sec4">4. Actividades Prohibidas</a></li>
+                <li><a href="#sec5">5. Contribuciones del Usuario</a></li>
+                <li><a href="#sec6">6. Licencia de Contribuciones</a></li>
+                <li><a href="#sec7">7. Gestión del Servicio</a></li>
+                <li><a href="#sec8">8. Vigencia y Terminación</a></li>
+                <li><a href="#sec9">9. Modificaciones e Interrupciones</a></li>
+                <li><a href="#sec10">10. Ley Aplicable</a></li>
+                <li><a href="#sec11">11. Resolución de Disputas</a></li>
+                <li><a href="#sec12">12. Correcciones</a></li>
+                <li><a href="#sec13">13. Descargo de Responsabilidad</a></li>
+                <li><a href="#sec14">14. Limitación de Responsabilidad</a></li>
+                <li><a href="#sec15">15. Indemnización</a></li>
+                <li><a href="#sec16">16. Datos del Usuario</a></li>
+                <li><a href="#sec17">17. Comunicaciones Electrónicas</a></li>
+                <li><a href="#sec18">18. Disposiciones Generales</a></li>
+                <li><a href="#sec19">19. Contacto</a></li>
+            </ul>
+        </div>
 
-        <!-- DATOS DEL TITULAR -->
-        <div class="seccion" style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; font-weight: 600;">👤 Datos del Responsable</h2>
-            <table class="tabla-titular">
-                <tr><td>Titular</td><td>Victor Ali León Camacho</td></tr>
-                <tr><td>App</td><td>Luck Reveal</td></tr>
-                <tr><td>Correo</td><td><a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a></td></tr>
-                <tr><td>Ubicación</td><td>Hidalgo, México</td></tr>
-            </table>
-        </div>
+        <!-- DATOS DEL TITULAR (lo pongo como sección 0, pero sin número) -->
+        <div class="seccion" style="margin-bottom: 30px;">
+            <h2 style="font-size: 20px; font-weight: 600;">👤 Datos del Titular</h2>
+            <table class="tabla-titular">
+                <tr><td>Titular</td><td>Victor Ali León Camacho</td></tr>
+                <tr><td>App</td><td>LuckReveal</td></tr>
+                <tr><td>Correo</td><td><a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a></td></tr>
+                <tr><td>Ubicación</td><td>Hidalgo, México</td></tr>
+            </table>
+        </div>
 
-        <!-- INTRODUCCIÓN -->
-        <div class="seccion" style="margin-bottom: 30px;">
-            <p style="font-size: 16px; color: #3a3a3c;">
-                Este Aviso de Privacidad para <strong>victor ali leon camacho</strong> (haciendo negocios como <strong>Luck Reveal</strong>) ("<strong>nosotros</strong>", "<strong>nos</strong>" o "<strong>nuestro</strong>"), describe cómo y por qué podríamos acceder, recopilar, almacenar, usar y/o compartir ("<strong>procesar</strong>") su información personal cuando utiliza nuestros servicios ("<strong>Servicios</strong>"), incluso cuando:
-            </p>
-            <ul>
-                <li>Descarga y utiliza nuestra aplicación móvil (<strong>luck reveal</strong>), o cualquier otra aplicación nuestra que enlace con este Aviso de Privacidad.</li>
-                <li>Utiliza <strong>luck reveal</strong>. Luck Reveal es una aplicación móvil de conexión social y juegos casuales. Ofrece perfiles de usuario, sistema de 'matches', chat privado y mini-juegos de casino simulado. Utiliza una moneda virtual ('Tokens') sin valor monetario real, obtenible mediante misiones, anuncios o compras in-app. La app es solo para entretenimiento, no ofrece apuestas con dinero real y es exclusiva para mayores de 18 años.</li>
-                <li>Interactúa con nosotros de otras maneras relacionadas, incluidas actividades de marketing o eventos.</li>
-            </ul>
-            <div class="legal-note">
-                <p><strong>⚠️ ¿Preguntas o inquietudes?</strong> Leer este Aviso de Privacidad le ayudará a comprender sus derechos y opciones de privacidad. Si no está de acuerdo con nuestras políticas y prácticas, por favor no utilice nuestros Servicios. Si aún tiene preguntas o inquietudes, contáctenos en <a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a>.</p>
-            </div>
-        </div>
+        <!-- ACUERDO DE TÉRMINOS LEGALES (resumen) -->
+        <div class="seccion" style="margin-bottom: 30px;">
+            <p style="font-size: 16px; color: #3a3a3c;">
+                <strong>Soy Victor Ali León Camacho</strong> ("el Titular", "yo", "mi"). Opero la aplicación <strong>LuckReveal</strong>, así como cualquier otro producto o servicio relacionado que haga referencia a estos términos legales (colectivamente, el "Servicio").
+            </p>
+            <p style="font-size: 16px; color: #3a3a3c;">
+                Estos Términos y Condiciones constituyen un acuerdo legal entre <strong>tú</strong> (el "Usuario") y el Titular. Al acceder al Servicio, aceptas haber leído, entendido y aceptado quedar obligado por todos estos Términos.
+            </p>
+            <div class="legal-note">
+                <p><strong>⚠️ SI NO ESTÁS DE ACUERDO CON TODOS ESTOS TÉRMINOS, TIENES PROHIBIDO USAR EL SERVICIO Y DEBES DESCONTINUAR SU USO INMEDIATAMENTE.</strong></p>
+            </div>
+            <p style="font-size: 15px; color: #6e6e73;">
+                Me reservo el derecho de modificar estos Términos en cualquier momento. Te notificaré actualizando la fecha de "Última actualización". Es tu responsabilidad revisar periódicamente estos Términos.
+            </p>
+        </div>
 
-        <!-- RESUMEN DE PUNTOS CLAVE -->
-        <div class="seccion">
-            <h2>📌 Resumen de Puntos Clave</h2>
-            <p><em>Este resumen proporciona puntos clave de nuestro Aviso de Privacidad. Puede encontrar más detalles utilizando nuestra tabla de contenido anterior.</em></p>
-            <ul>
-                <li><strong>¿Qué información personal procesamos?</strong> Depende de cómo interactúe con nosotros y los Servicios, las elecciones que realice y los productos y características que utilice.</li>
-                <li><strong>¿Procesamos información personal sensible?</strong> Podemos procesar información confidencial cuando sea necesario con su consentimiento o según lo permita la ley aplicable (por ejemplo, orientación sexual).</li>
-                <li><strong>¿Recopilamos información de terceros?</strong> No recopilamos ninguna información de terceros.</li>
-                <li><strong>¿Cómo procesamos su información?</strong> Para proporcionar, mejorar y administrar nuestros Servicios, comunicarnos con usted, prevenir fraudes y cumplir con la ley.</li>
-                <li><strong>¿Con quién compartimos información?</strong> Compartimos información únicamente en situaciones específicas y con proveedores autorizados descritos en este aviso.</li>
-                <li><strong>¿Cómo mantenemos segura su información?</strong> Contamos con procesos organizativos y técnicos adecuados, aunque ninguna transmisión electrónica es 100% segura.</li>
-                <li><strong>¿Cuáles son sus derechos?</strong> Dependiendo de su ubicación geográfica, puede tener derechos específicos sobre su información personal.</li>
-                <li><strong>¿Cómo ejerce sus derechos?</strong> Presentando una solicitud de acceso de sujeto de datos o contactándonos directamente.</li>
-            </ul>
-        </div>
+        <!-- SECCIONES 1 a 19 -->
+        <!-- 1. Nuestros Servicios -->
+        <div class="seccion" id="sec1">
+            <h2><span class="num">1.</span> Nuestros Servicios</h2>
+            <p>La información proporcionada al usar el Servicio no está destinada a ser distribuida ni utilizada por ninguna persona o entidad en ninguna jurisdicción donde dicha distribución o uso sea contrario a la ley. Quienes elijan acceder al Servicio desde otras ubicaciones lo hacen por iniciativa propia y son responsables del cumplimiento de las leyes locales aplicables.</p>
+        </div>
 
-        <!-- SECCIONES 1 a 17 -->
-        <div class="seccion" id="sec1">
-            <h2><span class="num">1.</span> ¿Qué información recopilamos?</h2>
-            
-            <h3>Información personal que nos revela</h3>
-            <div class="highlight"><p><strong>En resumen:</strong> Recopilamos información personal que usted nos proporciona voluntariamente al registrarse, expresar interés en nuestros productos o contactarnos.</p></div>
-            <p>La información personal recopilada puede incluir:</p>
-            <ul>
-                <li>Nombres</li>
-                <li>Direcciones de correo electrónico</li>
-                <li>Nombres de usuario</li>
-                <li>Contraseñas</li>
-                <li>Datos de contacto o autenticación</li>
-                <li>Datos de geolocalización y ubicación precisa</li>
-            </ul>
-            
-            <h3>Información Sensible</h3>
-            <p>Cuando sea necesario y con su consentimiento, procesamos categorías de información sensible tales como:</p>
-            <ul>
-                <li>Datos sobre la vida sexual o la orientación sexual de una persona.</li>
-            </ul>
+        <!-- 2. Propiedad Intelectual -->
+        <div class="seccion" id="sec2">
+            <h2><span class="num">2.</span> Propiedad Intelectual</h2>
+            <p><strong>Mi propiedad intelectual:</strong> Soy el propietario o licenciatario de todos los derechos de propiedad intelectual del Servicio, incluyendo código fuente, bases de datos, funcionalidad, software, diseño, audio, video, texto, fotografías y gráficos (el "Contenido"), así como las marcas contenidas en él. El Contenido está protegido por las leyes de derechos de autor y propiedad intelectual de México y tratados internacionales.</p>
+            <p><strong>Tu uso del Servicio:</strong> Bajo cumplimiento de estos Términos, te otorgo una licencia no exclusiva, intransferible y revocable para:</p>
+            <ul>
+                <li>Acceder al Servicio; y</li>
+                <li>Descargar o imprimir una copia del Contenido al que tengas acceso.</li>
+            </ul>
+            <p>Únicamente para tu uso personal y no comercial. Queda prohibida cualquier reproducción, distribución, venta o explotación comercial sin mi autorización previa por escrito.</p>
+            <p><strong>Tus envíos:</strong> Al enviarme preguntas, comentarios, sugerencias o ideas ("Envíos"), me asignas todos los derechos de propiedad intelectual sobre ellos. Podré usarlos libremente sin compensación hacia ti.</p>
+            <p>Eres responsable de lo que envías y garantizas que:</p>
+            <ul>
+                <li>No es ilegal, ofensivo, difamatorio ni engañoso;</li>
+                <li>Es original tuyo o tienes los derechos necesarios;</li>
+                <li>No constituye información confidencial.</li>
+            </ul>
+        </div>
 
-            <h3>Datos de Pago</h3>
-            <p>Podemos recopilar datos necesarios para procesar sus pagos si realiza compras in-app. Todos los datos de pago son manejados y almacenados por <strong>Google LLC (Google Play)</strong> y <strong>Apple Inc. (App Store)</strong>. Puede consultar sus políticas en <a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a> y <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy</a>.</p>
+        <!-- 3. Representaciones del Usuario -->
+        <div class="seccion" id="sec3">
+            <h2><span class="num">3.</span> Representaciones del Usuario</h2>
+            <p>Al usar el Servicio, declaras y garantizas que:</p>
+            <ol>
+                <li>Tienes capacidad legal para cumplir estos Términos;</li>
+                <li>No eres menor de edad;</li>
+                <li>No accederás al Servicio mediante bots, scripts o medios automatizados;</li>
+                <li>No usarás el Servicio para fines ilegales;</li>
+                <li>Tu uso no violará ninguna ley o regulación aplicable.</li>
+            </ol>
+        </div>
 
-            <h3>Datos de Inicio de Sesión Social</h3>
-            <p>Si decide registrarse usando su cuenta de redes sociales (como Facebook o X), recopilaremos información de perfil de su proveedor social tal como se describe en la sección 7.</p>
+        <!-- 4. Actividades Prohibidas -->
+        <div class="seccion" id="sec4">
+            <h2><span class="num">4.</span> Actividades Prohibidas</h2>
+            <p>Como usuario del Servicio, NO debes:</p>
+            <ul>
+                <li>🚫 Realizar ingeniería inversa, descompilar o desensamblar el software.</li>
+                <li>🚫 Intentar obtener acceso no autorizado a sistemas o cuentas de otros usuarios.</li>
+                <li>🚫 Usar el Servicio para acosar, abusar o dañar a otras personas.</li>
+                <li>🚫 Cargar virus, malware o cualquier código malicioso.</li>
+                <li>🚫 Realizar minería de datos, scraping o extracción automatizada de información.</li>
+                <li>🚫 Suplantar a otro usuario o persona.</li>
+                <li>🚫 Interferir con el funcionamiento del Servicio.</li>
+                <li>🚫 Usar el Servicio para competir conmigo o con fines comerciales no autorizados.</li>
+                <li>🚫 Eliminar avisos de derechos de autor o propiedad.</li>
+                <li>🚫 Hacer uso comercial del Servicio sin aprobación expresa.</li>
+            </ul>
+        </div>
 
-            <h3>Datos de la Aplicación</h3>
-            <p>Si utiliza nuestra aplicación, podemos recopilar:</p>
-            <ul>
-                <li><strong>Información de Geolocalización:</strong> Para servicios basados en ubicación, configurables desde su dispositivo.</li>
-                <li><strong>Datos del Dispositivo Móvil:</strong> ID de dispositivo, modelo, fabricante, sistema operativo, versión, tipo de navegador, proveedor de red y dirección IP.</li>
-                <li><strong>Notificaciones Push:</strong> Para enviarle alertas sobre su cuenta o funciones de la app (desactivables en ajustes).</li>
-            </ul>
+        <!-- 5. Contribuciones Generadas por el Usuario -->
+        <div class="seccion" id="sec5">
+            <h2><span class="num">5.</span> Contribuciones Generadas por el Usuario</h2>
+            <p>El Servicio puede permitirte crear, enviar o publicar contenido ("Contribuciones"). Al hacerlo, garantizas que:</p>
+            <ul>
+                <li>Tienes derecho a publicar dicho contenido;</li>
+                <li>No infringe derechos de terceros;</li>
+                <li>Cumple con estos Términos.</li>
+            </ul>
+        </div>
 
-            <h3>Información recopilada automáticamente</h3>
-            <div class="highlight"><p><strong>En resumen:</strong> Cierta información, como su dirección IP y características del dispositivo, se recopila automáticamente cuando visita nuestros Servicios.</p></div>
-            <ul>
-                <li><strong>Datos de registro y uso:</strong> Información de diagnóstico, rendimiento, registros de actividad y errores (crash dumps).</li>
-                <li><strong>Datos del dispositivo:</strong> Ordenador, teléfono, tablet, IP, identificadores únicos y red móvil.</li>
-                <li><strong>Datos de ubicación:</strong> Ubicación precisa o imprecisa basada en GPS e IP.</li>
-            </ul>
+        <!-- 6. Licencia de Contribuciones -->
+        <div class="seccion" id="sec6">
+            <h2><span class="num">6.</span> Licencia de Contribuciones</h2>
+            <p>Conservas la propiedad de tus Contribuciones, pero me otorgas una licencia para acceder, almacenar, procesar y usar la información que proporcionas.</p>
+            <p>No soy responsable de las declaraciones o representaciones en tus Contribuciones. Eres el único responsable de ellas.</p>
+        </div>
 
-            <h3>Google API</h3>
-            <p>Nuestro uso de la información recibida de las APIs de Google se adhiere a la Política de Datos de Usuario de los Servicios de API de Google, incluidos los requisitos de Uso Limitado.</p>
-        </div>
+        <!-- 7. Gestión del Servicio -->
+        <div class="seccion" id="sec7">
+            <h2><span class="num">7.</span> Gestión del Servicio</h2>
+            <p>Me reservo el derecho, sin obligación, de:</p>
+            <ol>
+                <li>Monitorear el Servicio para detectar violaciones;</li>
+                <li>Tomar acciones legales contra quienes violen estos Términos;</li>
+                <li>Restringir o eliminar contenido inapropiado;</li>
+                <li>Eliminar archivos que sobrecarguen los sistemas;</li>
+                <li>Gestionar el Servicio para proteger mis derechos.</li>
+            </ol>
+        </div>
 
-        <div class="seccion" id="sec2">
-            <h2><span class="num">2.</span> ¿Cómo procesamos su información?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Procesamos su información para proporcionar, mejorar y administrar nuestros Servicios, comunicarnos con usted, por seguridad y prevención de fraudes, y para cumplir con la ley.</p></div>
-            <ul>
-                <li>Para facilitar la creación y autenticación de cuentas.</li>
-                <li>Para entregar y facilitar la prestación de servicios al usuario.</li>
-                <li>Para responder consultas de los usuarios y ofrecer soporte.</li>
-                <li>Para enviar información administrativa.</li>
-                <li>Para cumplir y gestionar sus pedidos y compras.</li>
-                <li>Para permitir la comunicación entre usuarios (chat privado y matches).</li>
-                <li>Para mostrar publicidad dirigida y personalizada.</li>
-                <li>Para proteger nuestros Servicios y prevenir fraudes.</li>
-                <li>Para identificar tendencias de uso y mejorar la app.</li>
-            </ul>
-        </div>
+        <!-- 8. Vigencia y Terminación -->
+        <div class="seccion" id="sec8">
+            <h2><span class="num">8.</span> Vigencia y Terminación</h2>
+            <p>Estos Términos permanecerán en vigor mientras uses el Servicio.</p>
+            <div class="legal-note">
+                <p><strong>⚠️ Me reservo el derecho de denegar el acceso, suspender o eliminar tu cuenta en cualquier momento, sin previo aviso, por cualquier motivo, incluyendo el incumplimiento de estos Términos.</strong></p>
+            </div>
+            <p>Si tu cuenta es terminada, queda prohibido crear una nueva cuenta bajo tu nombre, un nombre falso o el de un tercero.</p>
+        </div>
 
-        <div class="seccion" id="sec3">
-            <h2><span class="num">3.</span> ¿Qué bases legales nos respaldan para procesar su información?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Solo procesamos su información personal cuando tenemos una razón legal válida según la ley aplicable (como su consentimiento, cumplimiento contractual, intereses legítimos u obligaciones legales).</p></div>
-            <p>Si se encuentra en la UE, Reino Unido o Canadá, nos basamos en:</p>
-            <ul>
-                <li><strong>Consentimiento:</strong> Cuando nos ha dado permiso explícito para un propósito específico.</li>
-                <li><strong>Ejecución de un Contrato:</strong> Cuando es necesario para cumplir nuestras obligaciones contractuales con usted.</li>
-                <li><strong>Intereses Legítimos:</strong> Para mejorar nuestros servicios, analizar uso y prevenir fraudes.</li>
-                <li><strong>Obligaciones Legales:</strong> Para cumplir con mandatos judiciales o normativas aplicables.</li>
-            </ul>
-        </div>
+        <!-- 9. Modificaciones e Interrupciones -->
+        <div class="seccion" id="sec9">
+            <h2><span class="num">9.</span> Modificaciones e Interrupciones</h2>
+            <p>Me reservo el derecho de cambiar, modificar o eliminar contenidos del Servicio en cualquier momento y sin previo aviso.</p>
+            <p>No garantizo que el Servicio estará disponible en todo momento. Pueden ocurrir interrupciones por mantenimiento, problemas técnicos u otras causas. No seré responsable por pérdidas o daños causados por la indisponibilidad del Servicio.</p>
+        </div>
 
-        <div class="seccion" id="sec4">
-            <h2><span class="num">4.</span> ¿Cuándo y con quién compartimos su información personal?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Podemos compartir información en situaciones específicas con las siguientes categorías de terceros:</p></div>
-            <ul>
-                <li><strong>Publicidad y Marketing Directo:</strong> Google AdMob</li>
-                <li><strong>Conexión con cuentas de terceros:</strong> Google Sign-In</li>
-                <li><strong>Funcionalidad e Infraestructura:</strong> Cloud Firestore</li>
-                <li><strong>Facturación y Cobros:</strong> Google Play Billing</li>
-                <li><strong>Autenticación de Cuentas:</strong> Inicio de sesión de Google</li>
-                <li><strong>Análisis Web y Móvil:</strong> Google Analytics</li>
-                <li><strong>Monitoreo de Rendimiento:</strong> Crashlytics</li>
-            </ul>
-            <p>También podemos compartir información en casos de transferencias comerciales (fusiones o adquisiciones) o con otros usuarios en áreas públicas de la aplicación (perfiles, comentarios o interacciones sociales).</p>
-        </div>
+        <!-- 10. Ley Aplicable -->
+        <div class="seccion" id="sec10">
+            <h2><span class="num">10.</span> Ley Aplicable</h2>
+            <p>Estos Términos se regirán por las leyes de los Estados Unidos Mexicanos, específicamente las aplicables en el Estado de Hidalgo.</p>
+            <p>Cualquier disputa será resuelta por los tribunales competentes del Estado de Hidalgo, México.</p>
+        </div>
 
-        <div class="seccion" id="sec5">
-            <h2><span class="num">5.</span> ¿Cuál es nuestra postura sobre sitios web de terceros?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> No somos responsables de la seguridad de la información que comparta con terceros ajenos que aparezcan en nuestros Servicios.</p></div>
-            <p>Los Servicios pueden contener enlaces a sitios web o aplicaciones de terceros no afiliados. No garantizamos su seguridad ni privacidad, por lo que debe revisar las políticas de dichos terceros directamente.</p>
-        </div>
+        <!-- 11. Resolución de Disputas -->
+        <div class="seccion" id="sec11">
+            <h2><span class="num">11.</span> Resolución de Disputas</h2>
+            <p><strong>Negociación Informal:</strong> Antes de iniciar cualquier acción legal, las partes acuerdan intentar resolver la disputa mediante negociación informal durante al menos 30 días a partir de la notificación por escrito.</p>
+            <p><strong>Arbitraje:</strong> Si la negociación falla, la disputa se resolverá mediante arbitraje conforme a la Ley de Arbitraje Comercial de México.</p>
+            <ul>
+                <li>Número de árbitros: 1</li>
+                <li>Lugar: Hidalgo, México</li>
+                <li>Idioma: Español</li>
+            </ul>
+            <p><strong>Restricciones:</strong></p>
+            <ul>
+                <li>No se permitirán acciones colectivas (class actions).</li>
+                <li>El arbitraje se limita a la disputa entre las partes individualmente.</li>
+            </ul>
+            <p><strong>Excepciones:</strong> Quedan fuera del arbitraje las disputas sobre:</p>
+            <ul>
+                <li>Derechos de propiedad intelectual;</li>
+                <li>Robo, piratería o uso no autorizado;</li>
+                <li>Solicitudes de medidas cautelares.</li>
+            </ul>
+        </div>
 
-        <div class="seccion" id="sec6">
-            <h2><span class="num">6.</span> ¿Usamos cookies y otras tecnologías de seguimiento?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Podemos utilizar cookies y tecnologías similares para recopilar y almacenar su información.</p></div>
-            <p>Utilizamos balizas web, píxeles y cookies para mantener la seguridad, prevenir fallos y gestionar la publicidad personalizada.</p>
-            <h3>Google Analytics</h3>
-            <p>Compartimos información con Google Analytics para analizar el uso de los Servicios mediante funciones de informes publicitarios y remarketing. Puede inhabilitar su seguimiento en <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out</a>.</p>
-        </div>
+        <!-- 12. Correcciones -->
+        <div class="seccion" id="sec12">
+            <h2><span class="num">12.</span> Correcciones</h2>
+            <p>Puede haber errores tipográficos o imprecisiones en el Servicio. Me reservo el derecho de corregirlos en cualquier momento y sin previo aviso.</p>
+        </div>
 
-        <div class="seccion" id="sec7">
-            <h2><span class="num">7.</span> ¿Cómo manejamos sus inicios de sesión sociales?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Si se registra mediante una red social, obtenemos acceso a cierta información de su perfil.</p></div>
-            <p>Recibiremos su nombre, correo electrónico y foto de perfil según los permisos configurados en su red social. Usaremos estos datos únicamente para los fines descritos en esta política.</p>
-        </div>
+        <!-- 13. Descargo de Responsabilidad -->
+        <div class="seccion" id="sec13">
+            <h2><span class="num">13.</span> Descargo de Responsabilidad</h2>
+            <p>EL SERVICIO SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD".</p>
+            <p>NO OFREZCO GARANTÍAS, EXPRESAS O IMPLÍCITAS, INCLUYENDO LAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O NO INFRACCIÓN.</p>
+            <p>NO SOY RESPONSABLE POR:</p>
+            <ol>
+                <li>Errores o imprecisiones en el contenido;</li>
+                <li>Daños personales o materiales derivados del uso del Servicio;</li>
+                <li>Acceso no autorizado a servidores o información personal;</li>
+                <li>Interrupciones del servicio;</li>
+                <li>Virus o código malicioso transmitido por terceros;</li>
+                <li>Pérdidas derivadas del uso del contenido del Servicio.</li>
+            </ol>
+        </div>
 
-        <div class="seccion" id="sec8">
-            <h2><span class="num">8.</span> ¿Se transfiere su información internacionalmente?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Podemos transferir, almacenar y procesar su información en países distintos al suyo.</p></div>
-            <p>Nuestros servidores se encuentran en <strong>Estados Unidos</strong>. Si accede desde el EEE, Reino Unido o Suiza, aplicamos salvaguardas adecuadas, incluidas las Cláusulas Contractuales Estándar aprobadas por la Comisión Europea.</p>
-        </div>
+        <!-- 14. Limitación de Responsabilidad -->
+        <div class="seccion" id="sec14">
+            <h2><span class="num">14.</span> Limitación de Responsabilidad</h2>
+            <p>EN NINGÚN CASO SERÉ RESPONSABLE POR DAÑOS DIRECTOS, INDIRECTOS, CONSECUENTES, INCIDENTALES, ESPECIALES O PUNITIVOS, INCLUYENDO LUCRO CESANTE O PÉRDIDA DE DATOS.</p>
+            <div class="highlight">
+                <p><strong>💰 Mi responsabilidad máxima hacia ti se limitará a la menor cantidad entre: lo que hayas pagado por el Servicio (si aplica) o $1,000.00 MXN (mil pesos mexicanos).</strong></p>
+            </div>
+            <p>Algunas leyes no permiten ciertas limitaciones, por lo que algunas exclusiones podrían no aplicarte.</p>
+        </div>
 
-        <div class="seccion" id="sec9">
-            <h2><span class="num">9.</span> ¿Cuánto tiempo conservamos su información?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Conservamos su información durante el tiempo necesario para cumplir los fines descritos, a menos que la ley exija lo contrario.</p></div>
-            <p>Mantendremos sus datos mientras mantenga una cuenta activa con nosotros. Una vez finalizada, eliminaremos o anonimizaremos la información o la mantendremos aislada en archivos de respaldo seguros.</p>
-        </div>
+        <!-- 15. Indemnización -->
+        <div class="seccion" id="sec15">
+            <h2><span class="num">15.</span> Indemnización</h2>
+            <p>Aceptas defender, indemnizar y mantenerme libre de cualquier pérdida, daño, responsabilidad o reclamación de terceros derivada de:</p>
+            <ol>
+                <li>Tu uso del Servicio;</li>
+                <li>Tu incumplimiento de estos Términos;</li>
+                <li>Tu violación de derechos de terceros;</li>
+                <li>Cualquier acto dañino hacia otros usuarios.</li>
+            </ol>
+        </div>
 
-        <div class="seccion" id="sec10">
-            <h2><span class="num">10.</span> ¿Cómo mantenemos segura su información?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Protegemos su información mediante un sistema de medidas de seguridad organizativas y técnicas.</p></div>
-            <p>Implementamos salvaguardas razonables; sin embargo, ningún sistema de transmisión por Internet es 100% seguro, por lo que la transmisión corre bajo su propio riesgo.</p>
-        </div>
+        <!-- 16. Datos del Usuario -->
+        <div class="seccion" id="sec16">
+            <h2><span class="num">16.</span> Datos del Usuario</h2>
+            <p>Mantendré ciertos datos que transmitas al Servicio para su gestión. Realizo respaldos regulares, pero eres el único responsable de tus datos.</p>
+            <p>No seré responsable por pérdida o corrupción de datos, y renuncias a cualquier acción legal derivada de ello.</p>
+        </div>
 
-        <div class="seccion" id="sec11">
-            <h2><span class="num">11.</span> ¿Recopilamos información de menores de edad?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> No recopilamos datos de menores de 18 años ni comercializamos productos dirigidos a ellos.</p></div>
-            <p>Nuestros Servicios son exclusivos para mayores de 18 años. Si detectamos datos de menores recopilados por error, desactivaremos la cuenta y eliminaremos la información de inmediato. Contáctenos en <a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a> si sospecha de alguna infracción.</p>
-        </div>
+        <!-- 17. Comunicaciones Electrónicas -->
+        <div class="seccion" id="sec17">
+            <h2><span class="num">17.</span> Comunicaciones Electrónicas</h2>
+            <p>Visitar el Servicio, enviarme correos o completar formularios constituye comunicación electrónica.</p>
+            <p>Aceptas recibir comunicaciones electrónicas y reconoces que los contratos, avisos y transacciones electrónicas cumplen con requisitos legales de forma escrita.</p>
+        </div>
 
-        <div class="seccion" id="sec12">
-            <h2><span class="num">12.</span> ¿Cuáles son sus derechos de privacidad?</h2>
-            <div class="highlight"><p><strong>En resumen:</strong> Dependiendo de su región, usted tiene derechos para acceder, rectificar, restringir o eliminar su información personal.</p></div>
-            <p>Puede revisar, modificar o cerrar su cuenta en cualquier momento contactándonos a través de <a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a>.</p>
-        </div>
+        <!-- 18. Disposiciones Generales -->
+        <div class="seccion" id="sec18">
+            <h2><span class="num">18.</span> Disposiciones Generales</h2>
+            <ul>
+                <li>Estos Términos constituyen el acuerdo completo entre tú y yo.</li>
+                <li>Si alguna disposición es inválida, las demás seguirán vigentes.</li>
+                <li>No se crea relación de sociedad, empleo o agencia entre nosotros.</li>
+                <li>Puedo ceder mis derechos y obligaciones en cualquier momento.</li>
+                <li>No seré responsable por causas fuera de mi control razonable.</li>
+                <li>Estos Términos no se interpretarán en mi contra por haberlos redactado.</li>
+            </ul>
+        </div>
 
-        <div class="seccion" id="sec13">
-            <h2><span class="num">13.</span> Controles para funciones Do-Not-Track</h2>
-            <p>La mayoría de los navegadores web incluyen una función Do-Not-Track (DNT). Actualmente no existe un estándar unificado para reconocer señales DNT, por lo que no respondemos automáticamente a ellas en este momento.</p>
-        </div>
+        <!-- 19. Contacto -->
+        <div class="seccion" id="sec19">
+            <h2><span class="num">19.</span> Contacto</h2>
+            <p>Para resolver quejas o recibir más información sobre el uso del Servicio, contáctame en:</p>
+            <table class="tabla-titular">
+                <tr><td>Titular</td><td>Victor Ali León Camacho</td></tr>
+                <tr><td>Correo</td><td><a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a></td></tr>
+                <tr><td>Ubicación</td><td>Hidalgo, México</td></tr>
+            </table>
+        </div>
 
-        <div class="seccion" id="sec14">
-            <h2><span class="num">14.</span> ¿Los residentes de Estados Unidos tienen derechos específicos?</h2>
-            <p>Los residentes de ciertos estados de EE. UU. cuentan con derechos específicos bajo las leyes estatales de privacidad (como acceso, corrección y eliminación de datos personales).</p>
-        </div>
+        <!-- PIE DE PÁGINA -->
+        <div class="footer">
+            <span>© 2026 LuckReveal · Todos los derechos reservados</span>
+            <span><a href="#" onclick="window.history.back(); return false;">← Volver a la app</a></span>
+        </div>
 
-        <div class="seccion" id="sec15">
-            <h2><span class="num">15.</span> ¿Actualizamos este aviso?</h2>
-            <p>Sí, actualizaremos este aviso cuando sea necesario para cumplir con las leyes vigentes. La versión actualizada se indicará con una fecha de "Última actualización" revisada.</p>
-        </div>
-
-        <div class="seccion" id="sec16">
-            <h2><span class="num">16.</span> ¿Cómo puede contactarnos sobre este aviso?</h2>
-            <p>Si tiene preguntas o comentarios sobre este aviso, puede enviarnos un correo electrónico a <a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a> o por correo postal a:</p>
-            <table class="tabla-titular">
-                <tr><td>Titular</td><td>Victor Ali León Camacho</td></tr>
-                <tr><td>Correo</td><td><a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a></td></tr>
-                <tr><td>Ubicación</td><td>Hidalgo, México</td></tr>
-            </table>
-        </div>
-
-        <div class="seccion" id="sec17">
-            <h2><span class="num">17.</span> ¿Cómo puede revisar, actualizar o eliminar los datos que recopilamos?</h2>
-            <p>Basado en las leyes aplicables de su país, es posible que tenga derecho a solicitar acceso a la información personal que recopilamos de usted, modificarla o eliminarla. Para solicitar la revisión, actualización o eliminación de sus datos personales, comuníquese con nosotros a <a href="mailto:luckreveal@gmail.com">luckreveal@gmail.com</a>.</p>
-        </div>
-
-        <!-- PIE DE PÁGINA -->
-        <div class="footer">
-            <span>© 2026 Luck Reveal · Todos los derechos reservados</span>
-            <span><a href="#" onclick="window.history.back(); return false;">← Volver a la app</a></span>
-        </div>
-
-    </div>
+    </div>
 </body>
 </html>
